@@ -17,7 +17,7 @@ public class BuatSoalActivity extends AppCompatActivity {
         findViewById(R.id.btnBuat).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(BuatSoalActivity.this, BuatPertanyaan.class));
+                startActivity(new Intent(BuatSoalActivity.this, BuatPertanyaanActivity.class));
             }
         });
     }

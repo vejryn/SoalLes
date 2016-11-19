@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BuatSoalActivity"></activity>
+        <activity android:name=".BuatSoalActivity" />
+        <activity android:name=".BuatPertanyaanActivity"></activity>
     </application>
 
 </manifest>
