@@ -50,9 +50,15 @@
 
         <Button
             android:id="@+id/buttonBuat"
-            android:layout_width="123dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Buat" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
