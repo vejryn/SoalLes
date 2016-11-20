@@ -47,7 +47,7 @@ public class BuatSoalActivity extends AppCompatActivity {
                         EditText editText = new EditText(BuatSoalActivity.this);
                         editText.setId(i + 1);
                         editText.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-                        editText.setHint("EditText " + (i + 1));
+                        editText.setHint("Soal " + (i + 1));
                         lnrDynamicEditTextHolder.addView(editText);
                     }
                 }
