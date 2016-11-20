@@ -21,7 +21,7 @@
         android:textSize="50px" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etJudul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -37,12 +37,13 @@
         android:textSize="50px" />
 
     <RadioGroup
+        android:id="@+id/rgJumlah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rb5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -52,14 +53,14 @@
             android:text="5" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rb10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.72"
             android:text="10" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rb15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
