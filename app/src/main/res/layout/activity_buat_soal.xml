@@ -50,9 +50,12 @@
 
         <Button
             android:id="@+id/buttonBuat"
+            style="@style/Base.TextAppearance.AppCompat.Title"
             android:layout_width="123dp"
             android:layout_height="wrap_content"
-            android:text="Buat" />
+            android:background="@drawable/bgbtn"
+            android:text="Buat"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
     <LinearLayout
