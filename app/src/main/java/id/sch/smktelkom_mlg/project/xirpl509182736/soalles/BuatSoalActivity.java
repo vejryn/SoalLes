@@ -44,11 +44,17 @@ public class BuatSoalActivity extends AppCompatActivity {
                     int length = Integer.parseInt(etJumlah.getText().toString());
 
                     for (int i = 0; i < length; i++) {
-                        EditText editText = new EditText(BuatSoalActivity.this);
-                        editText.setId(i + 1);
-                        editText.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-                        editText.setHint("Soal " + (i + 1));
-                        lnrDynamicEditTextHolder.addView(editText);
+                        EditText etSoal = new EditText(BuatSoalActivity.this);
+                        etSoal.setId(i + 1);
+                        etSoal.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                        etSoal.setHint("Soal " + (i + 1));
+                        lnrDynamicEditTextHolder.addView(etSoal);
+
+                        EditText etJawab = new EditText(BuatSoalActivity.this);
+                        etJawab.setId(i + 1);
+                        etJawab.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                        etJawab.setHint("Jawaban " + (i + 1));
+                        lnrDynamicEditTextHolder.addView(etJawab);
                     }
                 }
                 tvJudul.setText(judul);
