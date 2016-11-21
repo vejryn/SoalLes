@@ -73,16 +73,6 @@ public class BuatSoalActivity extends AppCompatActivity {
         findViewById(R.id.buttonNext).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String judul = etJudul.getText().toString();
-                String jmlhStr = etJumlah.getText().toString();
-                int jmlh = jmlhStr.isEmpty() ? 0 : Integer.parseInt(jmlhStr);
-
-                Intent intent = new Intent(BuatSoalActivity.this, Tampil.class);
-                intent.putExtra(JUDUL, judul);
-                intent.putExtra(JMLH, jmlh);
-
-                startActivity(intent);
-                //startActivity(new Intent(MainA
                 startActivity(new Intent(BuatSoalActivity.this, Tampil.class));
             }
         });

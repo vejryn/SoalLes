@@ -14,6 +14,7 @@ public class Tampil extends AppCompatActivity {
         setContentView(R.layout.activity_tampil);
         setTitle("Soal");
         String judul = getIntent().getStringExtra(BuatSoalActivity.JUDUL);
+        int jmlah = getIntent().getIntExtra(BuatSoalActivity.JMLH, 0);
         tvMapel = (TextView) findViewById(R.id.tvHasilMapel);
         tvNama = (TextView) findViewById(R.id.tvHasilNama);
         tvTahun = (TextView) findViewById(R.id.tvHasilTahun);
