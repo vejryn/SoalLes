@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String MAPEL = "Mapel";
+    public static final String NAMA = "Nama";
+    public static final String TAHUN = "Tahun";
     EditText etNama, etTahun, etMapel;
 
     @Override
@@ -22,18 +25,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 doProses();
-
-                startActivity(new Intent(MainActivity.this, BuatSoalActivity.class));
             }
         });
     }
 
     private void doProses() {
-        if (isValid()) {
-            String mapel = etMapel.getText().toString();
-            String nama = etNama.getText().toString();
-            int tahun = Integer.parseInt(etTahun.getText().toString());
-        }
+        isValid();
     }
 
     private boolean isValid() {
@@ -41,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
         String mapel = etMapel.getText().toString();
         String nama = etNama.getText().toString();
-        String tahun = etTahun.getText().toString();
+        String tahunStr = etTahun.getText().toString();
+        int tahun = tahunStr.isEmpty() ? 0 : Integer.parseInt(tahunStr);
+
 
         if (mapel.isEmpty()) {
             etMapel.setError("Mohon Isikan Mata Pelajaran Anda");
@@ -63,14 +62,21 @@ public class MainActivity extends AppCompatActivity {
             etNama.setError(null);
         }
 
-        if (tahun.isEmpty()) {
+        if (tahunStr.isEmpty()) {
             etTahun.setError("Mohon Isikan Tahun Pembuatan Soal Anda");
             valid = false;
-        } else if (tahun.length() != 4) {
-            etTahun.setError("Format Tahun Pembuatan Soal Bukan yyyy");
-            valid = false;
         } else {
-            etTahun.setError(null);
+            etNama.setError(null);
+        }
+        if (nama.length() != 0 && mapel.length() != 0 && tahunStr.length() != 0) {
+            Intent intent = new Intent(MainActivity.this, BuatSoalActivity.class);
+            intent.putExtra(MAPEL, mapel);
+            intent.putExtra(NAMA, nama);
+            intent.putExtra(TAHUN, tahun);
+
+            startActivity(intent);
+            //startActivity(new Intent(MainActivity.this, BuatSoalActivity.class));
+            return valid;
         }
         return valid;
     }

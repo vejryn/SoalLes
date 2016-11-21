@@ -13,6 +13,27 @@
     tools:context="id.sch.smktelkom_mlg.project.xirpl509182736.soalles.BuatSoalActivity">
 
     <TextView
+        android:id="@+id/tvhasilMapel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/tvHasilNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/tvHasilTahun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40px" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,6 +77,15 @@
             android:background="@drawable/bgbtn"
             android:text="Buat"
             android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtn"
+            android:text="Next"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -81,7 +111,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
