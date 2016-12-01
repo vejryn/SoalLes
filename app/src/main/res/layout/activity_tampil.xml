@@ -12,29 +12,24 @@
     tools:context="id.sch.smktelkom_mlg.project.xirpl509182736.soalles.Tampil">
 
     <TextView
-        android:id="@+id/tvHasilMapel"
+        android:id="@+id/tvJudul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimary"
         android:textSize="40px" />
 
     <TextView
-        android:id="@+id/tvHasilNama"
+        android:id="@+id/tvJumlah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimary"
         android:textSize="40px" />
 
     <TextView
-        android:id="@+id/tvHasilTahun"
+        android:id="@+id/tvTanggal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimary"
         android:textSize="40px" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="" />
 </LinearLayout>

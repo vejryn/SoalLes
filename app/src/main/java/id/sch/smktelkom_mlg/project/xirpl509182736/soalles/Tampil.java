@@ -5,7 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class Tampil extends AppCompatActivity {
-    TextView tvNama, tvMapel, tvTahun;
+
+    TextView judul, jmlh, tanggal;
 
 
     @Override
@@ -15,9 +16,6 @@ public class Tampil extends AppCompatActivity {
         setTitle("Soal");
         String judul = getIntent().getStringExtra(BuatSoalActivity.JUDUL);
         int jmlah = getIntent().getIntExtra(BuatSoalActivity.JMLH, 0);
-        tvMapel = (TextView) findViewById(R.id.tvHasilMapel);
-        tvNama = (TextView) findViewById(R.id.tvHasilNama);
-        tvTahun = (TextView) findViewById(R.id.tvHasilTahun);
 
 
     }
