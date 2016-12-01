@@ -38,6 +38,22 @@
                 android:inputType="textPersonName" />
 
             <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Buat Soal"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextTgl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="1 Jan 2000"
+                android:inputType="textPersonName" />
+
+            <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

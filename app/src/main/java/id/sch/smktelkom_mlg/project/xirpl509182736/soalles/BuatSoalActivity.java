@@ -14,9 +14,11 @@ public class BuatSoalActivity extends AppCompatActivity {
 
     public static final String JUDUL = "judul";
     public static final String JMLH = "jmlh";
+    public static final String TGL = "tgl";
+    public static final String tgl = TGL;
 
     private LinearLayout lnrDynamicEditTextHolder;
-    private EditText etJudul, etJumlah;
+    private EditText etJudul, etTgl, etJumlah;
     private Button bBuat,bNext;
     private TextView tvJudul;
 
@@ -30,6 +32,7 @@ public class BuatSoalActivity extends AppCompatActivity {
 
         lnrDynamicEditTextHolder = (LinearLayout) findViewById(R.id.lnrDynamicEditTextHolder);
         etJudul = (EditText) findViewById(R.id.editTextJudul);
+        etTgl = (EditText) findViewById(R.id.editTextTgl);
         etJumlah = (EditText) findViewById(R.id.editTextJumlah);
         bBuat = (Button) findViewById(R.id.buttonBuat);
         tvJudul = (TextView) findViewById(R.id.textViewJudul);

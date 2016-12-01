@@ -15,9 +15,19 @@ public class Tampil extends AppCompatActivity {
         setContentView(R.layout.activity_tampil);
         setTitle("Soal");
         String judul = getIntent().getStringExtra(BuatSoalActivity.JUDUL);
-        int jmlah = getIntent().getIntExtra(BuatSoalActivity.JMLH, 0);
+        int jmlh = getIntent().getIntExtra(BuatSoalActivity.JMLH, 0);
+        String tanggal = getIntent().getStringExtra(BuatSoalActivity.TGL);
 
 
+        TextView judulsoal = (TextView) findViewById(R.id.tvJudul);
+        TextView jumlah = (TextView) findViewById(R.id.tvJumlah);
+        TextView tgl = (TextView) findViewById(R.id.tvTanggal);
+
+        judulsoal.setText(judul);
+        jumlah.setText(jmlh);
+        tgl.setText(tanggal);
     }
-
 }
+
+
+
